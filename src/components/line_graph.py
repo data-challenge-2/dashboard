@@ -29,7 +29,7 @@ from dash import no_update
     Input('attribute-tt', 'data'),
     prevent_initial_call=True
 )
-def update_h_linechart(data, selected_borough, attribute, attribute_tt):
+def update_h_linechart(data, selected_borough, attribute_tt, attribute):
     if data is None or not data or selected_borough is None:
         return no_update
 

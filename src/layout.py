@@ -23,6 +23,11 @@ dash_layout = dbc.Container([
     dcc.Store(id='attribute-tt', data=''),
     dcc.Store(id='attribute', data=''),
 
+
+    dcc.Store(id="previously-clicked-attribute-store", storage_type="session"),
+    dcc.Store(id="agg-flag-store", storage_type="session"),
+    dcc.Store(id="df-data-store", storage_type="session"),
+
     dbc.Row([
         dbc.Row(html.H1('Powered by the TU/e', className='top-panel')),
         dbc.Row(html.H1('𝓟oL𝛔cal', className='polocal-header', style={'margin-top': '24px'})),
